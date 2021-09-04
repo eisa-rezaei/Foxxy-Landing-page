@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "yarn build:static && gh-pages -d out -r https://eisa-rezaei.github.io/Foxxy-Landing-page/"
   },
+  "homepage": "https://eisa-rezaei.github.io/Foxxy-Landing-page/",
   "dependencies": {
     "next": "11.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.0",
+    "swiper": "^7.0.3"
   },
   "devDependencies": {
     "eslint": "7.32.0",
