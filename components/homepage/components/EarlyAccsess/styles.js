@@ -74,7 +74,7 @@ export const StEarlyAccsessContantTitle = styled.p`
   line-height: 3.5rem;
   margin: 5px 0;
 `;
-export const StEarlyAccsessContantBtn = styled.button`
+export const StEarlyAccsessContactBtn = styled.button`
   width: 250px;
   height: 70px;
   color: #3d3045;

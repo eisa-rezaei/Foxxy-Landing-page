@@ -1,6 +1,6 @@
 import { StErrorPageContainer } from "./styles";
 
-const index = () => {
+const Error = () => {
   return (
     <StErrorPageContainer>
       Some Thing Wrong !! 404 Error Or Maybe this page is under progress
@@ -8,4 +8,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Error;

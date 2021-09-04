@@ -1,6 +1,6 @@
 import { StLinkBarContainer } from "./styles";
 
-const index = () => {
+const LinkBar = () => {
   return (
     <StLinkBarContainer>
       <span>facebook</span>
@@ -11,4 +11,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default LinkBar;

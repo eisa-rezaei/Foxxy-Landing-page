@@ -23,7 +23,7 @@ const LIST_ITEMS = [
   "the type of advertising you'll see",
 ];
 
-const index = () => {
+const Creative = () => {
   SwiperCore.use(Pagination);
   return (
     <StCreativeContainer>
@@ -43,7 +43,7 @@ const index = () => {
           <StCreativeFadeTwo />
         </StCreativeContantLinks>
         <StCreativeContantInfo>
-          <h4>Every secound counts , so Every details matters</h4>
+          <h4>Every secound counts, so Every details matters</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
             dolores fuga iure quaerat molestiae nostrum explicabo nam dolorum
@@ -57,7 +57,7 @@ const index = () => {
         <StCreativeContantInfo>
           <h4>
             All the cearive you
-            <br /> need , when you need it
+            <br /> need, when you need it
           </h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
@@ -91,4 +91,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Creative;

@@ -116,7 +116,7 @@ export const StPlatformFadeTwo = styled.div`
   );
 `;
 
-export const StPlatformContantInfoBtn = styled.button`
+export const StPlatformContactInfoBtn = styled.button`
   width: 170px;
   padding: 10px;
   margin-top: 25px;

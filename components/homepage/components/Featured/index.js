@@ -4,7 +4,7 @@ import {
   StFeaturedContant,
 } from "./styles";
 
-const index = () => {
+const Featured = () => {
   return (
     <StFeaturedContainer>
       <StFeaturedTitle>
@@ -37,4 +37,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Featured;

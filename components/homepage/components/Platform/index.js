@@ -5,10 +5,10 @@ import {
   StPlatformContantInfo,
   StPlatformFadeOne,
   StPlatformFadeTwo,
-  StPlatformContantInfoBtn,
+  StPlatformContactInfoBtn,
   StPlatformContantImage,
 } from "./styles";
-const index = () => {
+const Platform = () => {
   return (
     <StPlatformContainer>
       <StPlatformTitle>
@@ -29,11 +29,11 @@ const index = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum,
             sint.
           </p>
-          <StPlatformContantInfoBtn>Learn more</StPlatformContantInfoBtn>
+          <StPlatformContactInfoBtn>Learn more</StPlatformContactInfoBtn>
         </StPlatformContantInfo>
       </StPlatformContant>
     </StPlatformContainer>
   );
 };
 
-export default index;
+export default Platform;

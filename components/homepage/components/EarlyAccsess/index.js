@@ -3,12 +3,12 @@ import {
   StEarlyAccsessBgFadeCtPart,
   StEarlyAccsessBgFadeImgPart,
   StEarlyAccsessContant,
-  StEarlyAccsessContantBtn,
+  StEarlyAccsessContactBtn,
   StEarlyAccsessContantTitle,
   StEarlyAccsessImg,
 } from "./styles";
 
-const index = () => {
+const EarlyAccsess = () => {
   return (
     <StEarlyAccsess>
       <StEarlyAccsessBgFadeImgPart />
@@ -23,11 +23,11 @@ const index = () => {
           Lorem ipsum dolor sit amet consectetur odio dolor adipisicing elit.
           Tempore animi laborum odio dolor repellat ipsum dolor sit amet id!
         </p>
-        <StEarlyAccsessContantBtn>Get early access</StEarlyAccsessContantBtn>
+        <StEarlyAccsessContactBtn>Get early access</StEarlyAccsessContactBtn>
       </StEarlyAccsessContant>
       <StEarlyAccsessBgFadeCtPart />
     </StEarlyAccsess>
   );
 };
 
-export default index;
+export default EarlyAccsess;

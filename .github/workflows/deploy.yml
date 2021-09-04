@@ -18,7 +18,7 @@ jobs:
         run: yarn install --force
 
       - name: Build 🧩
-        run: yarn run build:static
+        run: yarn build:static
         env:
           CI: true
 
