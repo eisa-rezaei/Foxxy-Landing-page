@@ -40,7 +40,6 @@ export const StPlatformTitle = styled.article`
 export const StPlatformContant = styled.article`
   width: 100%;
   height: 500px;
-  padding: 0 10vw;
   margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;

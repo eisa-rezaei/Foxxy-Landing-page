@@ -30,6 +30,7 @@ const Platform = () => {
             right="100px"
             bgColor
             rotate
+            borderRadius="3px"
           />
           <StTinyStylingBoxes
             width="8px"
@@ -38,6 +39,7 @@ const Platform = () => {
             left="60px"
             bgColor
             rotate
+            borderRadius="3px"
           />
           <StTinyStylingBoxes
             width="15px"
@@ -46,6 +48,7 @@ const Platform = () => {
             left="260px"
             bgColor
             rotate
+            borderRadius="3px"
           />
           <StTinyStylingBoxes
             width="30px"
