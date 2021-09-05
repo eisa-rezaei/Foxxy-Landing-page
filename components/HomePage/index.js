@@ -1,19 +1,19 @@
-import EarlyAccsess from "./components/EarlyAccsess";
-import LinkBar from "./components/LinkBar";
-import Featured from "./components/Featured";
-import Creative from "./components/Creative";
-import Platform from "./components/Platform";
+import EarlyAccsessPart from "./components/EarlyAccsess";
+import LinkBarPart from "./components/LinkBar";
+import FeaturedPart from "./components/Featured";
+import CreativePart from "./components/Creative";
+import PlatformPart from "./components/Platform";
 
 import { StyledHomePageContainer } from "./styles";
 
 const HomePage = () => {
   return (
     <StyledHomePageContainer>
-      <EarlyAccsess />
-      <LinkBar />
-      <Featured />
-      <Creative />
-      <Platform />
+      <EarlyAccsessPart />
+      <LinkBarPart />
+      <FeaturedPart />
+      <CreativePart />
+      <PlatformPart />
     </StyledHomePageContainer>
   );
 };
