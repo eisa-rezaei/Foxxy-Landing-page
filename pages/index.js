@@ -4,7 +4,9 @@ import Pricing from "../components/Pricing";
 import ForProperties from "../components/ForProperties";
 import ForRenters from "../components/ForRenters";
 
-export default function Home() {
+import React from "react";
+
+const Home = () => {
   const router = useRouter();
   const page = router.query.page || "home";
   const whichPage = {
@@ -15,4 +17,6 @@ export default function Home() {
   };
   const Content = whichPage[page] || HomePage;
   return <Content />;
-}
+};
+
+export default Home;
