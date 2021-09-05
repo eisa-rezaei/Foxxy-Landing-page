@@ -1,8 +1,8 @@
-import EarlyAccsessPart from "./components/EarlyAccsess";
-import LinkBarPart from "./components/LinkBar";
-import FeaturedPart from "./components/Featured";
-import CreativePart from "./components/Creative";
-import PlatformPart from "./components/Platform";
+import EarlyAccsessPart from "./components/EarlyAccsess/index";
+import LinkBarPart from "./components/LinkBar/index";
+import FeaturedPart from "./components/Featured/index";
+import CreativePart from "./components/Creative/index";
+import PlatformPart from "./components/Platform/index";
 
 import { StyledHomePageContainer } from "./styles";
 
