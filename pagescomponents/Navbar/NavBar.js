@@ -1,5 +1,5 @@
-import { useRouter } from "next/dist/client/router";
-import Link from "next/link";
+import { useRouter } from "next/router";
+
 import {
   StyledPageNavBar,
   StyledPageNavBarLinks,
