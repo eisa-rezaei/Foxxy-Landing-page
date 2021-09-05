@@ -18,12 +18,18 @@ const NavBar = () => {
       </StyledPageNavBarTitle>
 
       <StyledPageNavBarLinks>
-        <button onClick={navLinkHandler("forproperties")}>
+        <button type="button" onClick={navLinkHandler("forproperties")}>
           for properteis
         </button>
-        <button onClick={navLinkHandler("forrenters")}> for renters</button>
-        <button onClick={navLinkHandler("pricing")}> pricing </button>
-        <button onClick={navLinkHandler("login")}> login</button>
+        <button type="button" onClick={navLinkHandler("forrenters")}>
+          for renters
+        </button>
+        <button type="button" onClick={navLinkHandler("pricing")}>
+          pricing
+        </button>
+        <button type="button" onClick={navLinkHandler("login")}>
+          login
+        </button>
       </StyledPageNavBarLinks>
     </StyledPageNavBar>
   );
