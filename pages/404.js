@@ -1,4 +1,4 @@
-import ErrorPage from "../pagecomponents/Error";
+import ErrorPage from "../pagescomponents/Error";
 
 const Error = () => {
   return (
