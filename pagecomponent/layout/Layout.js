@@ -1,5 +1,5 @@
 import Head from "next/head";
-import NavBar from "../navbar/NavBar";
+import NavBar from "../Navbar/NavBar";
 import { GlobalStyle } from "./GlobalStyles";
 
 const Layout = ({ children }) => {
