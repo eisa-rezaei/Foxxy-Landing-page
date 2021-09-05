@@ -4,7 +4,7 @@ import Featured from "./components/Featured";
 import Creative from "./components/Creative";
 import Platform from "./components/Platform";
 
-import { StyledHomePageContainer } from "./HomePageStyles";
+import { StyledHomePageContainer } from "./styles";
 
 const HomePage = () => {
   return (

@@ -1,5 +1,5 @@
 import { useRouter } from "next/dist/client/router";
-import HomePage from "../components/Homepage/HomePage";
+import HomePage from "../components/HomePage";
 import Pricing from "../components/Pricing";
 import ForProperties from "../components/ForProperties";
 import ForRenters from "../components/ForRenters";
