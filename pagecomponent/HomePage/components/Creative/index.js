@@ -14,6 +14,7 @@ import {
   StCreativeContantInfoBtn,
   StCreativeContantImage,
   StCreativeContantImageSwiper,
+  StTinyStylingBoxes,
 } from "./styles";
 
 const LIST_ITEMS = [
@@ -41,6 +42,55 @@ const Creative = () => {
           ))}
           <StCreativeFadeOne />
           <StCreativeFadeTwo />
+          <StTinyStylingBoxes
+            width="8px"
+            height="8px"
+            top="170px"
+            right="100px"
+            bgColor
+            rotate
+          />
+          <StTinyStylingBoxes
+            width="15px"
+            height="15px"
+            top="200px"
+            left="0px"
+            bgColor
+            rotate
+            borderRadius="5px"
+          />
+          <StTinyStylingBoxes
+            width="15px"
+            height="15px"
+            bottom="150px"
+            left="260px"
+            bgColor
+            rotate
+          />
+          <StTinyStylingBoxes
+            width="30px"
+            height="30px"
+            top="120px"
+            right="200px"
+            borderRadius="8px"
+          />
+          <StTinyStylingBoxes
+            width="40px"
+            height="40px"
+            bottom="15px"
+            left="40px"
+            borderRadius="8px"
+            bgColor
+            zIndex="2"
+          />
+          <StTinyStylingBoxes
+            width="40px"
+            height="40px"
+            top="85px"
+            right="40px"
+            borderRadius="8px"
+            bgColor
+          />
         </StCreativeContantLinks>
         <StCreativeContantInfo>
           <h4>Every secound counts, so Every details matters</h4>
@@ -82,7 +132,55 @@ const Creative = () => {
               <span className="pagenation"></span>
             </Swiper>
           </StCreativeContantImageSwiper>
-
+          <StTinyStylingBoxes
+            width="8px"
+            height="8px"
+            top="170px"
+            right="100px"
+            bgColor
+            rotate
+          />
+          <StTinyStylingBoxes
+            width="15px"
+            height="15px"
+            top="200px"
+            left="0px"
+            bgColor
+            rotate
+            borderRadius="5px"
+          />
+          <StTinyStylingBoxes
+            width="15px"
+            height="15px"
+            bottom="150px"
+            left="260px"
+            bgColor
+            rotate
+          />
+          <StTinyStylingBoxes
+            width="30px"
+            height="30px"
+            top="120px"
+            right="200px"
+            borderRadius="8px"
+          />
+          <StTinyStylingBoxes
+            width="40px"
+            height="40px"
+            bottom="15px"
+            left="40px"
+            borderRadius="8px"
+            bgColor
+            zIndex="2"
+          />
+          <StTinyStylingBoxes
+            width="40px"
+            height="40px"
+            top="85px"
+            right="40px"
+            borderRadius="8px"
+            bgColor
+          />
           <StCreativeFadeOne />
           <StCreativeFadeTwo />
         </StCreativeContantImage>

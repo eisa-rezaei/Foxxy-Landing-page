@@ -10,12 +10,17 @@ export const StFeaturedContainer = styled.div`
   & p {
     font-size: 0.8rem;
   }
+  @media (max-width: 700px) {
+    & p {
+      font-size: 0.5rem;
+    }
+  }
 `;
 export const StFeaturedTitle = styled.div`
   width: 100%;
   height: 40%;
   text-align: center;
-  padding: 5% 0;
+  padding: 50px 0;
   & h3 {
     padding: 0 30vw;
     font-size: 3rem;
@@ -28,6 +33,13 @@ export const StFeaturedTitle = styled.div`
     color: #d386d8;
     font-size: 1rem;
     font-weight: 500;
+  }
+  @media (max-width: 700px) {
+    padding: 50px 0;
+    & h3 {
+      padding: 0 10vw;
+      font-size: 2.5rem;
+    }
   }
 `;
 export const StFeaturedContant = styled.div`
@@ -57,7 +69,7 @@ export const StFeaturedContant = styled.div`
     }
 
     & img {
-      width: 250px;
+      width: 100%;
       height: 250px;
       object-fit: contain;
     }
@@ -67,6 +79,14 @@ export const StFeaturedContant = styled.div`
       color: #3d3045;
       text-align: center;
       font-size: 1rem;
+    }
+  }
+  @media (max-width: 700px) {
+    & span {
+      height: 250px;
+      & p {
+        font-size: 0.7rem;
+      }
     }
   }
 `;

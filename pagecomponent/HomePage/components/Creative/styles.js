@@ -30,6 +30,12 @@ export const StCreativeTitle = styled.article`
     font-size: 1rem;
     font-weight: 500;
   }
+  @media (max-width: 700px) {
+    & h3 {
+      padding: 0 10vw;
+      font-size: 2.5rem;
+    }
+  }
 `;
 export const StCreativeContant = styled.article`
   width: 100%;
@@ -40,6 +46,14 @@ export const StCreativeContant = styled.article`
   gap: 50px;
   padding: 0 10vw;
   margin-top: 60px;
+  overflow: hidden;
+  @media (max-width: 700px) {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    margin-top: 20px;
+  }
 `;
 export const StCreativeContantInfo = styled.div`
   width: 100%;
@@ -57,6 +71,9 @@ export const StCreativeContantInfo = styled.div`
   }
   & p {
     color: #867f87;
+  }
+  @media (max-width: 700px) {
+    padding-right: 0px;
   }
 `;
 export const StCreativeContantInfoBtn = styled.button`
@@ -83,6 +100,9 @@ export const StCreativeContantLinks = styled.ul`
   justify-content: space-evenly;
   padding: 0;
   position: relative;
+  @media (max-width: 700px) {
+    min-height: 500px;
+  }
 `;
 export const StCreativeContantSingleLink = styled.li`
   width: 80%;
@@ -109,6 +129,9 @@ export const StCreativeContantSingleLink = styled.li`
     background-color: #fff;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   }
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `;
 
 export const StCreativeContantImage = styled.div`
@@ -119,6 +142,9 @@ export const StCreativeContantImage = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: -150px;
+  @media (max-width: 700px) {
+    margin-right: 0px;
+  }
 `;
 export const StCreativeContantImageSwiper = styled.div`
   width: 300px;
@@ -162,4 +188,26 @@ export const StCreativeFadeTwo = styled.div`
     rgba(249, 229, 231, 1) 5%,
     rgba(249, 229, 231, 0) 70%
   );
+`;
+
+export const StTinyStylingBoxes = styled.span`
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  top: ${(props) => props.top};
+  left: ${(props) => props.left};
+  bottom: ${(props) => props.bottom};
+  right: ${(props) => props.right};
+  ${(props) =>
+    props.bgColor
+      ? ` background: rgb(155, 100, 246);
+  background: linear-gradient(
+    -45deg,
+    rgba(155, 100, 246, 1) 0%,
+    rgba(227, 102, 224, 1) 100%
+  );`
+      : `background-color : #fff;`}
+  ${(props) => props.rotate && `transform: rotate(45deg);`}
+  border-radius: ${(props) => props.borderRadius};
+  z-index: ${(props) => props.zIndex};
+  position: absolute;
 `;
