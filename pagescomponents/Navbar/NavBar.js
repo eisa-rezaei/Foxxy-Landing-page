@@ -1,5 +1,5 @@
-import { useRouter } from "next/dist/client/router";
-import Link from "next/link";
+import { useRouter } from "next/router";
+
 import {
   StyledPageNavBar,
   StyledPageNavBarLinks,
@@ -18,12 +18,10 @@ const NavBar = () => {
       </StyledPageNavBarTitle>
 
       <StyledPageNavBarLinks>
-        <button onClick={navLinkHandler("forproperties")}>
-          for properteis
-        </button>
-        <button onClick={navLinkHandler("forrenters")}> for renters</button>
-        <button onClick={navLinkHandler("pricing")}> pricing </button>
-        <button onClick={navLinkHandler("login")}> login</button>
+        <span onClick={navLinkHandler("forproperties")}>for properteis</span>
+        <span onClick={navLinkHandler("forrenters")}>for renters</span>
+        <span onClick={navLinkHandler("pricing")}>pricing</span>
+        <span onClick={navLinkHandler("login")}>login</span>
       </StyledPageNavBarLinks>
     </StyledPageNavBar>
   );

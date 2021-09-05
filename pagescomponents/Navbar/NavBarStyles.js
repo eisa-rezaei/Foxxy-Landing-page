@@ -12,7 +12,7 @@ export const StyledPageNavBar = styled.div`
     padding: 1.5vh 4vw;
   }
 `;
-export const StyledPageNavBarTitle = styled.button`
+export const StyledPageNavBarTitle = styled.span`
   width: 10vw;
   font-size: 1.5rem;
   font-weight: 600;
@@ -31,7 +31,7 @@ export const StyledPageNavBarLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  & button {
+  & span {
     padding: 5px 0;
     text-align: center;
     transition: all 0.2s linear;
