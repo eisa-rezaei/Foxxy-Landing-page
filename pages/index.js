@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
-import HomePage from "../pagecomponent/HomePage";
-import Pricing from "../pagecomponent/Pricing";
-import ForProperties from "../pagecomponent/ForProperties";
-import ForRenters from "../pagecomponent/ForRenters";
+import HomePage from "../components/HomePage";
+import Pricing from "../components/Pricing";
+import ForProperties from "../components/ForProperties";
+import ForRenters from "../components/ForRenters";
 
 import React from "react";
 
