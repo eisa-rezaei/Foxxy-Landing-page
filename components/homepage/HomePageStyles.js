@@ -6,7 +6,8 @@ export const StyledHomePageContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
   user-select: none;
+  margin-bottom: 20px;
 `;

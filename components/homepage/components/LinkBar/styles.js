@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StLinkBarContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   min-height: 100px;
   display: flex;
   flex-direction: row;
@@ -19,5 +19,13 @@ export const StLinkBarContainer = styled.div`
   & span:last-child {
     font-family: "Satisfy", cursive;
     font-size: 2rem;
+  }
+  @media (max-width: 700px) {
+    padding: 0 5vw;
+    font-size: 1.1rem;
+    & span:last-child {
+      font-family: "Satisfy", cursive;
+      font-size: 1.2rem;
+    }
   }
 `;

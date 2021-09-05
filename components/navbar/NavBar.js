@@ -1,3 +1,4 @@
+import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 import {
   StyledPageNavBar,
@@ -6,16 +7,23 @@ import {
 } from "./NavBarStyles";
 
 const NavBar = () => {
+  const router = useRouter();
+  const navLinkHandler = (page) => () => {
+    router.push(`/?page=${page}`);
+  };
   return (
     <StyledPageNavBar>
-      <StyledPageNavBarTitle>
-        <Link href="/"> Foxxy</Link>
+      <StyledPageNavBarTitle onClick={navLinkHandler("home")}>
+        Foxxy
       </StyledPageNavBarTitle>
+
       <StyledPageNavBarLinks>
-        <Link href="/for-properteis"> for properteis</Link>
-        <Link href="/for-renters"> for renters</Link>
-        <Link href="/pricing"> pricing </Link>
-        <Link href="/login"> login</Link>
+        <button onClick={navLinkHandler("forproperties")}>
+          for properteis
+        </button>
+        <button onClick={navLinkHandler("forrenters")}> for renters</button>
+        <button onClick={navLinkHandler("pricing")}> pricing </button>
+        <button onClick={navLinkHandler("login")}> login</button>
       </StyledPageNavBarLinks>
     </StyledPageNavBar>
   );

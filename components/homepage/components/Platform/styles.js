@@ -30,16 +30,29 @@ export const StPlatformTitle = styled.article`
     font-size: 1rem;
     font-weight: 500;
   }
+  @media (max-width: 700px) {
+    & h3 {
+      padding: 0 5vw;
+      font-size: 2rem;
+    }
+  }
 `;
 export const StPlatformContant = styled.article`
   width: 100%;
   height: 500px;
+  padding: 0 10vw;
+  margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   gap: 50px;
-  padding: 0 10vw;
-  margin-top: 60px;
+  @media (max-width: 700px) {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    padding: 0;
+  }
 `;
 export const StPlatformContantInfo = styled.div`
   width: 100%;
@@ -58,22 +71,8 @@ export const StPlatformContantInfo = styled.div`
   & p {
     color: #867f87;
   }
-`;
-export const StContantInfoBtn = styled.button`
-  width: 170px;
-  padding: 10px;
-  margin-top: 25px;
-  font-weight: 500;
-  color: #d386d8;
-  background-color: inherit;
-  border: 2px solid #d386d8;
-  border-radius: 15px;
-  transition: all 0.2s linear;
-  :hover {
-    cursor: pointer;
-    background-color: #f6a9fb;
-    border-color: #f3a6f8;
-    color: #fff;
+  @media (max-width: 700px) {
+    padding: 0 10vw;
   }
 `;
 export const StPlatformContantImage = styled.div`
@@ -81,11 +80,20 @@ export const StPlatformContantImage = styled.div`
   height: 100%;
   position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   & img {
     width: 400px;
-    z-index: 2;
+    height: 300px;
+    z-index: 3;
+  }
+  @media (max-width: 700px) {
+    & img {
+      width: 100%;
+      height: 100%;
+    }
   }
 `;
 
@@ -130,4 +138,25 @@ export const StPlatformContactInfoBtn = styled.button`
     cursor: pointer;
     box-shadow: 0 5px 15px #d386d875;
   }
+`;
+export const StTinyStylingBoxes = styled.span`
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  top: ${(props) => props.top};
+  left: ${(props) => props.left};
+  bottom: ${(props) => props.bottom};
+  right: ${(props) => props.right};
+  ${(props) =>
+    props.bgColor
+      ? ` background: rgb(155, 100, 246);
+  background: linear-gradient(
+    -45deg,
+    rgba(155, 100, 246, 1) 0%,
+    rgba(227, 102, 224, 1) 100%
+  );`
+      : `background-color : #fff;`}
+  ${(props) => props.rotate && `transform: rotate(45deg);`}
+  border-radius: ${(props) => props.borderRadius};
+  z-index: 2;
+  position: absolute;
 `;
